@@ -1,0 +1,49 @@
+<div data-role="page" id="contenuPage" data-url="contenuPage">
+
+	<style type="text/css">
+	#contentPage p{
+					text-shadow:0 0 0;
+					-moz-user-select: none; 
+					-webkit-user-select: none; 
+				   font-family: "roboto" !important;
+				   
+				   color: #404040;
+	}
+	</style>
+	
+	<!-- Menu à gauche -->
+	<div data-role="panel" id="menu" data-position="left" data-display="overlay" data-theme="a">
+	<img src="images/logo-menu-220x80.png" /> <!-- Logo du challenge au dessus du menu -->
+		<ul data-role="listview" >
+			<li><a href="news.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-home">News</a></li>
+			<li><a href="matchs.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-grid">Matchs</a></li>
+			<li><a href="navette.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-clock">Navettes</a></li>
+			<li><a href="programme.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-calendar">Programme</a></li>
+			<li><a href="plan.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-location">Plan</a></li>
+			<li><a href="faq.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-info">FAQ</a></li>
+			<li><a href="contact.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-plus">Urgences</a></li>
+			<li><a href="partenaire.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-shop">Partenaires</a></li>
+			<li><a href="noteznous.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-comment">Notez-nous</a></li>
+		</ul>
+	</div>
+
+	<!-- Bouton d'ouverture du menu et titre de la page --> 
+	<div data-role="header" data-theme="a">
+		<a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Ouverture du menu</a>
+		<h1 id="titrePage">Programme</h1>
+	</div>
+
+	<!-- Contenu de la Page -->
+	<div role="main" class="ui-content" id="contentPage">	
+
+		<ul data-role="listview">
+			<li><a href="programmeRestauration.html" data-transition="none"><h2 style="font-size: 14px;">Restauration</h2><p style="font-size: 13px;white-space: normal;">Les horaires d'ouverture du RU et de distribution des packfoods</p></a></li>
+			<li><a href="programmeActivites.html" data-transition="none"><h2 style="font-size: 14px;">Activités sur le campus</h2><p style="font-size: 13px;white-space: normal;">Le programme des activités proposées sur le campus: soirées, concours, remises des prix</p></a></li>
+			<li style="white-space: normal;font-size: 13px;"><a href="images/pdf/planning.pdf" data-ajax="false" data-transition="none"><h2 style="font-size: 14px;">Programme en PDF</h2><p style="font-size: 13px;white-space: normal;">Version PDF du programme distribué aux arrivants</p></a></li>
+		</ul>
+		
+		<br/><br/>
+		<p style="font-size: 13px;white-space: normal;"> Attention ! Pour télécharger le PDF : Sur certains portables, il faut rester appuyé sur le lien et choisir "enregistrer-sous".</p>
+	
+	</div>
+</div>

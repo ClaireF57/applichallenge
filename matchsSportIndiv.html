@@ -1,0 +1,37 @@
+<div data-role="page" id="contenuPage" data-url="contenuPage">
+
+	<!-- Menu à gauche -->
+	<div data-role="panel" id="menu" data-position="left" data-display="overlay" data-theme="a">
+	<img src="images/logo-menu-220x80.png" /> <!-- Logo du challenge au dessus du menu -->
+		<ul data-role="listview">
+			<li><a href="news.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-home">News</a></li>
+			<li><a href="matchs.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-grid">Matchs</a></li>
+			<li><a href="navette.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-clock">Navettes</a></li>
+			<li><a href="programme.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-calendar">Programme</a></li>
+			<li><a href="plan.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-location">Plan</a></li>
+			<li><a href="faq.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-info">FAQ</a></li>
+			<li><a href="contact.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-plus">Urgences</a></li>
+			<li><a href="partenaire.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-shop">Partenaires</a></li>
+			<li><a href="noteznous.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-comment">Notez-nous</a></li>
+		</ul>
+	</div>
+
+	<!-- Bouton d'ouverture du menu et titre de la page --> 
+	<div data-role="header" data-theme="a">
+		<a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Ouverture du menu</a>
+		<h1 id="titrePage">Sports Indiv.</h1>
+		<a href="matchs.html" data-transition="none" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+	</div>
+
+	<!-- Contenu de la Page -->
+	<div role="main" class="ui-content" id="contentPage">	
+
+		<div id="listSportIndiv">
+		</div>
+		
+	</div>
+	
+	
+	<script src="scripts/database_seul_lecture.js"></script>
+	<script src="scripts/matchsSportIndiv.js"></script>
+</div>	

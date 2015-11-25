@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			
+			<!-- Titre de la page (sera invisible sur portable) -->
+			<title>Interface Staff Challenge</title>
+
+			<!-- css et js de jquerymobile -->
+			<link rel="stylesheet" href="../style/jquery.mobile-1.4.5.min.css">
+			<link rel="stylesheet" href="../style/demos/_assets/css/jqm-demos.css">
+			<script src="../style/demos/js/jquery.js"></script>
+			
+			<script src="../style/demos/_assets/js/index.js"></script>
+			<script src="../style/demos/js/jquery.mobile-1.4.5.min.js"></script>
+			
+			 <!--css et js boostrap!-->
+			<link rel="stylesheet" href="../style/bootstrap.css">
+			<script src="../style/bootstrap.js"></script>
+			
+			<!-- Charge le thème de la page -->
+			<link rel="stylesheet" href="../themes/themeChallenge.css" />
+			<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	</head>
+	
+	<body>
+		<div data-role="page" id="contenuPage" data-url="contenuPage">
+
+			<!-- Bouton d'ouverture du menu et titre de la page --> 
+			<div data-role="header" data-theme="a">
+				<h1 id="titrePage">Scores Sports Individuels</h1>
+				<a href="index.html" data-ajax="false" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+			</div>
+			
+
+			<!-- Contenu de la Page -->
+			<div role="main" data-role="content" class="ui-content" id="contentPage">	
+			
+				<div id="dataInsertIndiv">
+				</div>	
+						
+			</div>
+	</body>
+	
+	<script src="scripts/database.js"></script>
+	<script src="scripts/insertindiv.js"> </script>
+	<script src="scripts/controlLogin.js"></script>
+</html>

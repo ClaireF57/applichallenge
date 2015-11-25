@@ -1,0 +1,108 @@
+<div data-role="page" id="contenuPage" data-url="contenuPage">
+
+	<!-- Menu à gauche -->
+	<div data-role="panel" id="menu" data-position="left" data-display="overlay" data-theme="a">
+	<img src="images/logo-menu-220x80.png" /> <!-- Logo du challenge au dessus du menu -->
+		<ul data-role="listview">
+			<li><a href="news.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-home">News</a></li>
+			<li><a href="matchs.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-grid">Matchs</a></li>
+			<li><a href="navette.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-clock">Navettes</a></li>
+			<li><a href="programme.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-calendar">Programme</a></li>
+			<li><a href="plan.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-location">Plan</a></li>
+			<li><a href="faq.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-info">FAQ</a></li>
+			<li><a href="contact.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-plus">Urgences</a></li>
+			<li><a href="partenaire.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-shop">Partenaires</a></li>
+			<li><a href="noteznous.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-comment">Notez-nous</a></li>
+		</ul>
+	</div>
+
+	<!-- Bouton d'ouverture du menu et titre de la page --> 
+	<div data-role="header" data-theme="a">
+		<a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Ouverture du menu</a>
+		<h1 id="titrePage">Matchs de Poule</h1>
+		<a href="matchs.html" data-transition="none" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+	</div>
+
+	<!-- Contenu de la Page -->
+	<div data-role="content" role="main" class="ui-content" id="contentPage">
+	  <form>
+		  <select id="ecole1" data-mini="true">
+			  <option value="" style="font-size: 14px;">Toutes les écoles</option>
+			  <option value="Agro Paris Tech">Agro Paris Tech</option>
+			  <option value="Centrale Lille">Centrale Lille</option>
+			  <option value="Centrale Lyon">Centrale Lyon</option>
+			  <option value="Centrale Marseille">Centrale Marseille</option>
+			  <option value="Centrale Nantes">Centrale Nantes</option>
+			  <option value="Centrale Paris">Centrale Paris</option>
+			  <option value="CESI">CESI</option>
+			  <option value="CPE Lyon">CPE Lyon</option>
+			  <option value="EM Lyon">EM Lyon</option>
+			  <option value="ENS Lyon">ENS Lyon</option>
+			  <option value="ENS Ulm">ENS Ulm</option>
+			  <option value="ENSEA">ENSEA</option>
+			  <option value="ENSICA">ENSICA</option>
+			  <option value="ENSIIE">ENSIIE</option>
+			  <option value="EPFL">EPFL</option>
+			  <option value="ESPCI">ESPCI</option>
+			  <option value="ESTP">ESTP</option>
+			  <option value="ETSII Madrid">ETSII Madrid</option>
+			  <option value="Mines d’Alès">Mines d’Alès</option>
+			  <option value="Mines de Nancy">Mines de Nancy</option>
+			  <option value="Mines de Paris">Mines de Paris</option>
+			  <option value="Mines de Saint-Étienne">Mines de Saint-Étienne</option>
+			  <option value="Ponts et Chaussées">Ponts et Chaussées</option>
+			  <option value="SupAéro">SupAéro</option>
+			  <option value="Supélec">Supélec</option>
+			  <option value="Supoptique">Supoptique</option>
+			  <option value="Télécom Bretagne">Télécom Bretagne</option>
+			  <option value="Vieux Cons 1">Vieux Cons 1</option>
+			  <option value="Vieux Cons 2">Vieux Cons 2</option>
+			  <option value="Centrale Lyon 1">Centrale Lyon 1</option>
+			  <option value="Centrale Lyon 2">Centrale Lyon 2</option>
+			  <option value="Centrale Lyon 3">Centrale Lyon 3</option>
+			  <option value="Centrale Lyon 4">Centrale Lyon 4</option>
+			  <option value="Centrale Lyon 5">Centrale Lyon 5</option>
+
+		  </select>
+		  
+		  <select id="sport" data-mini="true">
+			  <option value="">Tous les sports</option>
+			  <option value="Basket F">Basket F</option>
+			  <option value="Basket H">Basket H</option>
+			  <option value="Foot F">Foot F</option>
+			  <option value="Foot H">Foot H</option>
+			  <option value="Hand F">Hand F</option>
+			  <option value="Hand H">Hand H</option>
+			  <option value="Rugby F">Rugby F</option>
+			  <option value="Rugby H">Rugby H</option>
+			  <option value="Ultimate">Ultimate</option>
+			  <option value="Volley F">Volley F</option>
+			  <option value="Volley H">Volley H</option>
+		  </select>
+		  
+		  <select id="poule" data-mini="true">
+			  <option value="">Toutes les poules</option>
+			  <option value="A">Poule A</option>
+			  <option value="B">Poule B</option>
+			  <option value="C">Poule C</option>
+			  <option value="D">Poule D</option>
+			  <option value="E">Poule E</option>
+			  <option value="F">Poule F</option>
+			  <option value="G">Poule G</option>
+			  <option value="H">Poule H</option>
+		  </select>
+	  </form>
+
+
+		</br>
+		
+		<div id="dataPoules">
+		</div>	
+		
+	</div>
+	
+	<script src="scripts/database_seul_lecture.js"></script>
+	<script src="scripts/filtrePoules.js"></script>
+	<script src="scripts/matchsPoules.js"></script>
+	
+</div>

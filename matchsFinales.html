@@ -1,0 +1,52 @@
+<div data-role="page" id="contenuPage" data-url="contenuPage">
+
+	<!-- Menu à gauche -->
+	<div data-role="panel" id="menu" data-position="left" data-display="overlay" data-theme="a">
+	<img src="images/logo-menu-220x80.png" /> <!-- Logo du challenge au dessus du menu -->
+		<ul data-role="listview">
+			<li><a href="index.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">News</a></li>
+			<li><a href="matchs.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-grid">Matchs</a></li>
+			<li><a href="navette.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-clock">Navettes</a></li>
+			<li><a href="programme.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-calendar">Programme</a></li>
+			<li><a href="plan.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-location">Plan</a></li>
+			<li><a href="faq.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info">FAQ</a></li>
+			<li><a href="contact.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-mail">Contact</a></li>
+			<li><a href="partenaire.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-shop">Partenaires</a></li>
+			<li><a href="noteznous.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-comment">Notez-nous</a></li>
+		</ul>
+	</div>
+
+	<!-- Bouton d'ouverture du menu et titre de la page --> 
+	<div data-role="header" data-theme="a">
+		<a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Ouverture du menu</a>
+		<h1 id="titrePage">Phases Finales</h1>
+		<a href="matchs.html" data-transition="none"  id="matchsBack" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+	</div>
+
+	<!-- Contenu de la Page -->
+	<div role="main" class="ui-content" id="contentPage">
+		
+		<select id="sport" data-mini="true">
+			  <option value="">Tous les sports</option>
+			  <option value="Basket F">Basket F</option>
+			  <option value="Basket H">Basket H</option>
+			  <option value="Foot F">Foot F</option>
+			  <option value="Foot H">Foot H</option>
+			  <option value="Hand F">Hand F</option>
+			  <option value="Hand H">Hand H</option>
+			  <option value="Rugby F">Rugby F</option>
+			  <option value="Rugby H">Rugby H</option>
+			  <option value="Ultimate">Ultimate</option>
+			  <option value="Volley F">Volley F</option>
+			  <option value="Volley H">Volley H</option>
+			  <option value="Waterpolo">Waterpolo</option>
+		</select>
+		<br/>
+		
+		<div id="dataFinales"></div>
+	
+	</div>
+	<script src="scripts/database_seul_lecture.js"></script>
+	<script src="scripts/matchsFinales.js"></script>
+	<script src="scripts/filtreFinales.js"></script>
+</div>	

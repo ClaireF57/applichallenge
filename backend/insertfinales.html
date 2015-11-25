@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			
+			<!-- Titre de la page (sera invisible sur portable) -->
+			<title>Interface Staff Challenge</title>
+
+			<!-- css et js de jquerymobile -->
+			<link rel="stylesheet" href="../style/jquery.mobile-1.4.5.min.css">
+			<link rel="stylesheet" href="../style/demos/_assets/css/jqm-demos.css">
+			<script src="../style/demos/js/jquery.js"></script>
+			
+			<script src="../style/demos/_assets/js/index.js"></script>
+			<script src="../style/demos/js/jquery.mobile-1.4.5.min.js"></script>
+			
+			 <!--css et js boostrap!-->
+			<link rel="stylesheet" href="../style/bootstrap.css">
+			<script src="../style/bootstrap.js"></script>
+			
+			<!-- Charge le thème de la page -->
+			<link rel="stylesheet" href="../themes/themeChallenge.css" />
+			<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	</head>
+	
+	<body>
+		<div data-role="page" id="contenuPage" data-url="contenuPage">
+
+			<!-- Bouton d'ouverture du menu et titre de la page --> 
+			<div data-role="header" data-theme="a">
+				<h1 id="titrePage">Scores Sports Co. - Finales </h1>
+				<a href="index.html" data-ajax="false" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+			</div>
+			
+			<div data-role="content" role="main" class="ui-content" id="contentPage">	
+				<form>
+					<select id="sport" data-mini="true">
+						<option value="">Tous les sports</option>
+                        <option value="Basket F">Basket F</option>
+                        <option value="Basket H">Basket H</option>
+                        <option value="Foot F">Foot F</option>
+                        <option value="Foot H">Foot H</option>
+                        <option value="Hand F">Hand F</option>
+                        <option value="Hand H">Hand H</option>
+                        <option value="Rugby F">Rugby F</option>
+                        <option value="Rugby H">Rugby H</option>
+                        <option value="Volley F">Volley F</option>
+                        <option value="Volley H">Volley H</option>
+                        <option value="Waterpolo">Waterpolo</option>
+					</select>
+				</form>
+				
+				<br/>
+				
+				<div id="dataInsertFinales">
+				</div>
+                
+			</div>
+		</div>
+	</body>
+	
+	<script src="scripts/database.js"></script>
+	<script src="scripts/insertfinales.js"></script>
+	<script src="scripts/filtrefinales.js"></script>
+		<script src="scripts/controlLogin.js"></script>
+</html>

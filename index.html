@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<!-- S'adapter à la taille du portable, empèche de zoomer sur la page -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
+		<!-- Afficher le site en plein écran -->
+		<meta name="apple-mobile-web-app-capable" content="yes" /> 
+		<meta name="apple-touch-fullscreen" content="yes">
+		
+		<!-- Rend la barre de status noire et le texte blanc -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<!-- Titre de l'application -->
+		<meta name="apple-mobile-web-app-title" content="Challenge">
+		
+		<!-- Titre de la page (sera invisible sur portable) -->
+		<title>Challenge</title>
+		
+		<!-- Icone pour iOS 7 iPhone (retina) -->
+		<link href="images/icon-120x120.png" sizes="120x120" rel="apple-touch-icon">
+		
+		<!-- Startup image pour iOS 6 & 7 iPhone (retina) -->
+		<link href="images/startup-image-640x920.png"
+			  media="(device-width: 320px) and (device-height: 480px)
+			  and (-webkit-device-pixel-ratio: 2)"
+			  rel="apple-touch-startup-image">
+
+
+		<!-- css et js de jquerymobile -->
+		<link rel="stylesheet" href="style/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="style/demos/_assets/css/jqm-demos.css">
+		<script src="style/demos/js/jquery.js"></script>
+		
+		<script src="style/demos/_assets/js/index.js"></script>
+		<script src="style/demos/js/jquery.mobile-1.4.5.min.js"></script>
+		
+		 <!--css et js boostrap!-->
+		<link rel="stylesheet" href="style/bootstrap.css">
+		<script src="style/bootstrap.js"></script>
+		
+		<!-- Charge le thème de la page -->
+		<link rel="stylesheet" href="themes/themeChallenge.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		
+		<style type="text/css">
+		
+			@font-face{
+			font-family:"roboto";
+			src: url('themes/roboto.ttf') ;
+			}
+			
+			.ui-header {
+				background-color: #325ab2;
+				color: white;
+			}
+			
+			#contenuPage {
+			background-color: #eeeeee;
+			}
+
+			#contentPage p{
+					text-shadow:0 0 0;
+					-moz-user-select: none; 
+					-webkit-user-select: none; 
+				   font-family: "roboto" !important;
+				   
+				   color: #404040;
+			}
+	</style>
+
+	</head>
+	<body>
+		<div data-role="page" id="contenuPage" data-url="contenuPage">
+
+			<!-- Menu à gauche -->
+			<div data-role="panel" id="menu" data-position="left" data-display="overlay" data-theme="a">
+				<img src="images/logo-menu-220x80.png" /> <!-- Logo du challenge au dessus du menu -->
+				<ul data-role="listview">
+					<li><a href="news.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-home">News</a></li>
+					<li><a href="matchs.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-grid">Matchs</a></li>
+					<li><a href="navette.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-clock">Navettes</a></li>
+					<li><a href="programme.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-calendar">Programme</a></li>
+					<li><a href="plan.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-location">Plan</a></li>
+					<li><a href="faq.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-info">FAQ</a></li>
+					<li><a href="contact.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-plus">Urgences</a></li>
+					<li><a href="partenaire.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-shop">Partenaires</a></li>
+					<li><a href="noteznous.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-comment">Notez-nous</a></li>
+				</ul>
+			</div>
+
+			<!-- Bouton d'ouverture du menu et titre de la page --> 
+			<div data-role="header" data-theme="a">
+				<a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Ouverture du menu</a>
+				<h1 id="titrePage">News</h1>
+			</div>
+
+			<!-- Contenu de la Page -->
+			<div role="main" class="ui-content" id="contentPage">	
+
+				<div id="newsData">
+				</div>
+            
+			</div>
+			
+			<script src="scripts/database_seul_lecture.js"></script>
+			<script src="scripts/news.js"></script>
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-60915190-1', 'auto');
+			  ga('send', 'pageview');
+
+			</script>
+		</div>
+	</body>
+</html>

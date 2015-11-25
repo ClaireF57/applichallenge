@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="utf-8">
+			
+			<!-- Titre de la page (sera invisible sur portable) -->
+			<title>Interface Staff Challenge</title>
+
+			<!-- css et js de jquerymobile -->
+			<link rel="stylesheet" href="../style/jquery.mobile-1.4.5.min.css">
+			<link rel="stylesheet" href="../style/demos/_assets/css/jqm-demos.css">
+			<script src="../style/demos/js/jquery.js"></script>
+			
+			<script src="../style/demos/_assets/js/index.js"></script>
+			<script src="../style/demos/js/jquery.mobile-1.4.5.min.js"></script>
+			
+			 <!--css et js boostrap!-->
+			<link rel="stylesheet" href="../style/bootstrap.css">
+			<script src="../style/bootstrap.js"></script>
+			
+			<!-- Charge le thème de la page -->
+			<link rel="stylesheet" href="../themes/themeChallenge.css" />
+			<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	</head>
+	
+	<body>
+		<div data-role="page" id="contenuPage" data-url="contenuPage">
+
+			<!-- Bouton d'ouverture du menu et titre de la page --> 
+			<div data-role="header" data-theme="a">
+				<h1 id="titrePage">Gérer les News</h1>
+				<a href="index.html" data-ajax="false" class="ui-btn ui-icon-back ui-btn-icon-notext ui-corner-all"></a>
+			</div>
+			
+
+			<!-- Contenu de la Page -->
+			<div role="main" data-role="content" class="ui-content" id="contentPage">	
+				
+			<!-- Lien pour ajouter une News -->
+			<a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left" data-transition="pop">Ajouter une news</a>
+			
+			<!-- Le pop up pour ajouter une News -->
+			<div data-role="popup" style="min-width:600px;" id="popupLogin" class="ui-corner-all">
+			
+				<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<div data-role="header" style="text-align:center">
+					<h2>Ajouter une news</h2>
+				</div>
+				
+				<div role="main" class="ui-content">
+					<div>
+						<label>Titre :</label>
+						<input type="text" id="titleAjouter" />
+					</div>
+					<div>
+						<label for="subtitle">Contenu:</label>
+						<textarea name="subtitle" id="subtitleAjouter"></textarea>
+					</div>
+					
+					<label>Debut d'affichage :</label>
+					<div class="ui-grid-b">
+					
+						<div class="ui-block-a">
+								<select id="jourDebut">
+									<option value="1">Vendredi</option>
+									<option value="2">Samedi</option>
+									<option value="3">Dimanche</option>
+								</select>
+						</div>
+						
+						<div class="ui-block-b">
+							<input type="text" id="heureDebut" placeholder="Heure (2 chiffres)"/>
+						</div>
+						
+						<div class="ui-block-c">
+							<input type="text" id="minDebut"  placeholder="Minutes (2 chiffres"/>
+						</div>
+					</div>
+					
+					<label>Fin d'affichage :</label>
+					<div class="ui-grid-b">
+					
+						<div class="ui-block-a">
+								<select id="jourFin">
+									<option value="1">Vendredi</option>
+									<option value="2">Samedi</option>
+									<option value="3">Dimanche</option>
+								</select>
+						</div>
+						
+						<div class="ui-block-b">
+							<input type="text" id="heureFin" placeholder="Heure (2 chiffres)"/>
+						</div>
+						
+						<div class="ui-block-c">
+							<input type="text" id="minFin"  placeholder="Minutes (2 chiffres)"/>
+						</div>
+					</div>
+					
+					<div style="text-align:center">
+						<a onclick="javascript:SaveNw();" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-icon-left ui-icon-check ui-btn-b" data-rel="back" data-transition="flow">Enregistrer</a>
+					</div>
+				</div>							
+			</div>
+
+			<br/>
+			
+				<div id="dataInsertNews">
+				</div>	
+						
+		</div>
+	</body>
+	<script src="scripts/database.js"></script>
+	<script src="scripts/insertnews.js"> </script>
+		<script src="scripts/controlLogin.js"></script>
+</html>

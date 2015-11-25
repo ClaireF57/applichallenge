@@ -1,0 +1,302 @@
+<div data-role="page" id="contenuPage" data-url="contenuPage">
+
+	<!-- Menu à gauche -->
+	<div data-role="panel" id="menu" data-position="left" data-display="overlay" data-theme="a">
+	<img src="images/logo-menu-220x80.png" /> <!-- Logo du challenge au dessus du menu -->
+		<ul data-role="listview">
+			<li><a href="news.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-home">News</a></li>
+			<li><a href="matchs.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-grid">Matchs</a></li>
+			<li><a href="navette.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-clock">Navettes</a></li>
+			<li><a href="programme.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-calendar">Programme</a></li>
+			<li><a href="plan.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-location">Plan</a></li>
+			<li><a href="faq.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-info">FAQ</a></li>
+			<li><a href="contact.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-plus">Urgences</a></li>
+			<li><a href="partenaire.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-shop">Partenaires</a></li>
+			<li><a href="noteznous.html" data-transition="none" class="ui-btn ui-shadow  ui-corner-all ui-btn-icon-left ui-icon-comment">Notez-nous</a></li>
+		</ul>
+	</div>
+
+	<!-- Bouton d'ouverture du menu et titre de la page --> 
+	<div data-role="header" data-theme="a">
+		<a href="#menu" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Ouverture du menu</a>
+		<h1 id="titrePage">Navettes</h1>
+	</div>
+
+	<!-- Contenu de la Page -->
+	<div role="main" class="ui-content" id="contentPage">	
+		<form>
+			  <select id="ecole" data-mini="true">
+				  <option value="" style="font-size: 14px;">Toutes les écoles</option>
+				  <option value="Agro Paris Tech">Agro Paris Tech</option>
+				  <option value="Centrale Lille">Centrale Lille</option>
+				  <option value="Centrale Marseille">Centrale Marseille</option>
+				  <option value="Centrale Nantes">Centrale Nantes</option>
+				  <option value="Centrale Paris">Centrale Paris</option>
+				  <option value="ENS Ulm">ENS Ulm</option>
+				  <option value="ENSEA">ENSEA</option>
+				  <option value="ENSICA">ENSICA</option>
+				  <option value="ENSIIE">ENSIIE</option>
+				  <option value="EPFL">EPFL</option>
+				  <option value="ESPCI">ESPCI</option>
+				  <option value="ESTP">ESTP</option>
+				  <option value="ETSII Madrid">ETSII Madrid</option>
+				  <option value="Mines d’Alès">Mines d’Alès</option>
+				  <option value="Mines de Nancy">Mines de Nancy</option>
+				  <option value="Mines de Paris">Mines de Paris</option>
+				  <option value="Mines de Saint-Étienne">Mines de Saint-Étienne</option>
+				  <option value="Ponts et Chaussées">Ponts et Chaussées</option>
+				  <option value="SupAéro">SupAéro</option>
+				  <option value="Supélec">Supélec</option>
+				  <option value="Supoptique">Supoptique</option>
+				  <option value="Télécom Bretagne">Télécom Bretagne</option>
+			  </select>
+
+			  <select id="sport" data-mini="true">
+				  <option value="">Tous les sports</option>
+				  <option value="Basket F">Basket F</option>
+				  <option value="Basket H">Basket H</option>
+				  <option value="Foot H">Foot H</option>
+				  <option value="Hand F">Hand F</option>
+				  <option value="Hand H">Hand H</option>
+				  <option value="Rugby H">Rugby H</option>
+				  <option value="Ultimate">Ultimate</option>
+				  <option value="Volley F">Volley F</option>
+				  <option value="Volley H">Volley H</option>
+				  <option value="Waterpolo">Waterpolo</option>
+			  </select>
+		  </form>
+		  <br/>
+		<ul data-role="listview">
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Foot H</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Foot H</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Foot H</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Ecully</p></li>
+			<li data-ecole="ENSEA"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSEA - Foot H</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Foot H</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Basket H</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ESPCI"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESPCI - Basket H</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Basket H</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Basket H</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Basket F</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Basket F</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ENSIIE"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSIIE - Basket F</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ENSICA"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSICA - Basket F</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ETSII Madrid"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ETSII Madrid - Basket F</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Basket F</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Volley F</h2><p>Navette n°A - Samedi à 6h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Volley F</h2><p>Navette n°A - Samedi à 7h00<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ENSICA"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSICA - Volley F</h2><p>Navette n°A - Samedi à 7h00<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Volley F</h2><p>Navette n°A - Samedi à 7h00<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Foot H</h2><p>Navette n°B - Samedi à 7h00<br/>Vers Ecully</p></li>
+			<li data-ecole="ENSIIE"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSIIE - Foot H</h2><p>Navette n°B - Samedi à 7h00<br/>Vers Ecully</p></li>
+			<li data-ecole="Mines de Paris"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Paris - Foot H</h2><p>Navette n°B - Samedi à 7h00<br/>Vers Ecully</p></li>
+			<li data-ecole="Mines d’Alès"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines d’Alès - Foot H</h2><p>Navette n°B - Samedi à 7h00<br/>Vers Ecully</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Foot H</h2><p>Navette n°B - Samedi à 7h00<br/>Vers Ecully</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Hand H</h2><p>Navette n°B - Samedi à 7h00<br/>Vers Ecully</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Volley H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ENSIIE"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSIIE - Volley H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Volley H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Supoptique"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Volley H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ENSEA"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSEA - Volley H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Volley H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Mines de Paris"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Paris - Volley H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Volley H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="SupAéro"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Volley F</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ESTP"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Volley F</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ENS Ulm"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENS Ulm - Volley F</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Mines d’Alès"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines d’Alès - Rugby H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Ecully</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Rugby H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Ecully</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Rugby H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Ecully</p></li>
+			<li data-ecole="ETSII Madrid"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ETSII Madrid - Rugby H</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Ecully</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Athlétisme" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Athlétisme</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Athlétisme" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Athlétisme</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Athlétisme" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Athlétisme</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Athlétisme" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Athlétisme</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ENSIIE"  data-sport="Athlétisme" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSIIE - Athlétisme</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Mines d’Alès"  data-sport="Athlétisme" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines d’Alès - Athlétisme</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Athlétisme" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Athlétisme</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Athlétisme" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Athlétisme</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Supoptique"  data-sport="Athlétisme" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Athlétisme</h2><p>Navette n°B - Samedi à 7h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Hand F</h2><p>Navette n°D - Samedi à 7h15<br/>Vers Ecully</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Hand F</h2><p>Navette n°D - Samedi à 7h15<br/>Vers Ecully</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Hand F</h2><p>Navette n°D - Samedi à 7h15<br/>Vers Ecully</p></li>
+			<li data-ecole="ESTP"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Hand H</h2><p>Navette n°D - Samedi à 7h15<br/>Vers Ecully</p></li>
+			<li data-ecole="Supoptique"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Hand H</h2><p>Navette n°D - Samedi à 7h15<br/>Vers Ecully</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Tennis</h2><p>Navette n°D - Samedi à 7h15<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Tennis</h2><p>Navette n°D - Samedi à 7h15<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Tennis</h2><p>Navette n°D - Samedi à 7h15<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Tennis</h2><p>Navette n°D - Samedi à 7h15<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="ENSEA"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSEA - Tennis</h2><p>Navette n°D - Samedi à 7h30<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="ENSIIE"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSIIE - Tennis</h2><p>Navette n°D - Samedi à 7h30<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="EPFL"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">EPFL - Tennis</h2><p>Navette n°D - Samedi à 7h30<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="ESPCI"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESPCI - Tennis</h2><p>Navette n°D - Samedi à 7h30<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="ESTP"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Tennis</h2><p>Navette n°D - Samedi à 7h30<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Mines d’Alès"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines d’Alès - Tennis</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Tennis</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Tennis</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Tennis</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="SupAéro"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Tennis</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Supélec"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supélec - Tennis</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Supoptique"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Tennis</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Tennis" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Tennis</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Dardilly-4 saisons</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Hand F</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Hand F</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Ecully</p></li>
+			<li data-ecole="EPFL"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">EPFL - Hand F</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Hand H</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Hand H</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Hand H</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Volley F</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Volley F</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Volley F</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Volley F</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ETSII Madrid"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ETSII Madrid - Volley F</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="SupAéro"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Volley F</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ENSIIE"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSIIE - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="EPFL"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">EPFL - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ESPCI"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESPCI - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ESTP"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Mines d’Alès"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines d’Alès - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="SupAéro"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Supoptique"  data-sport="Badminton" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Badminton</h2><p>Navette n°D - Samedi à 7h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Hand F</h2><p>Navette n°C - Samedi à 7h45<br/>Vers Ecully - Gymnase Cevert</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Hand F</h2><p>Navette n°C - Samedi à 7h45<br/>Vers Ecully - Gymnase Cevert</p></li>
+			<li data-ecole="SupAéro"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Hand F</h2><p>Navette n°C - Samedi à 8h00<br/>Vers Ecully - Gymnase Cevert</p></li>
+			<li data-ecole="Mines de Paris"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Paris - Hand F</h2><p>Navette n°C - Samedi à 8h00<br/>Vers Ecully - Gymnase Cevert</p></li>
+			<li data-ecole="ESTP"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Hand F</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Ecully - Gymnase Cevert</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Hand F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Hand F</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Ecully - Gymnase Cevert</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Foot H</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Stade Gilbert Vignes</p></li>
+			<li data-ecole="ETSII Madrid"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ETSII Madrid - Foot H</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Stade Gilbert Vignes</p></li>
+			<li data-ecole="SupAéro"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Foot H</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Stade Gilbert Vignes</p></li>
+			<li data-ecole="ENSICA"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSICA - Foot H</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Stade Gilbert Vignes</p></li>
+			<li data-ecole="ESPCI"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESPCI - Foot H</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Stade Gilbert Vignes</p></li>
+			<li data-ecole="ESTP"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Basket H</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Basket H</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="SupAéro"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Basket H</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Basket H</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Basket F</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Basket F</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Basket F</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Mines d’Alès"  data-sport="Basket F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines d’Alès - Basket F</h2><p>Navette n°C - Samedi à 8h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Natation</h2><p>Navette n°C - Samedi à 8h15<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Natation</h2><p>Navette n°C - Samedi à 8h15<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Natation</h2><p>Navette n°C - Samedi à 8h15<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Natation</h2><p>Navette n°C - Samedi à 8h45<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="EPFL"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">EPFL - Natation</h2><p>Navette n°C - Samedi à 8h45<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="ESPCI"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESPCI - Natation</h2><p>Navette n°C - Samedi à 8h45<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Natation</h2><p>Navette n°C - Samedi à 9h00<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Natation</h2><p>Navette n°C - Samedi à 9h00<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="SupAéro"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Natation</h2><p>Navette n°C - Samedi à 9h00<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Supoptique"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Natation</h2><p>Navette n°C - Samedi à 9h00<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Natation" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Natation</h2><p>Navette n°C - Samedi à 9h00<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="SupAéro"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Volley H</h2><p>Navette n°1 - Samedi à 9h00<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ESTP"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Rugby H</h2><p>Navette n°1 - Samedi à 9h00<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="Vieux cons"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Vieux cons - Rugby H</h2><p>Navette n°1 - Samedi à 9h00<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="ENSICA"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSICA - Waterpolo</h2><p>Navette n°1 - Samedi à 9h15<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="SupAéro"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Waterpolo</h2><p>Navette n°1 - Samedi à 9h15<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Golf</h2><p>Navette n°1 - Samedi à 9h15<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Golf</h2><p>Navette n°1 - Samedi à 9h15<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Golf</h2><p>Navette n°1 - Samedi à 9h15<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Volley H</h2><p>Navette n°2 - Samedi à 9h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="SupAéro"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Volley H</h2><p>Navette n°2 - Samedi à 9h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Rugby H</h2><p>Navette n°2 - Samedi à 9h15<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Rugby H</h2><p>Navette n°2 - Samedi à 9h15<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="Vieux cons"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Vieux cons - Rugby H</h2><p>Navette n°2 - Samedi à 9h15<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="ESTP"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Golf</h2><p>Navette n°2 - Samedi à 9h15<br/>Vers Centrale</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Golf</h2><p>Navette n°2 - Samedi à 9h15<br/>Vers Centrale</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Golf</h2><p>Navette n°2 - Samedi à 9h15<br/>Vers Centrale</p></li>
+			<li data-ecole="Supoptique"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Golf</h2><p>Navette n°2 - Samedi à 9h15<br/>Vers Centrale</p></li>
+			<li data-ecole="Supoptique"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Foot H</h2><p>Navette n°E - Samedi à 9h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Foot H</h2><p>Navette n°E - Samedi à 9h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ESTP"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Foot H</h2><p>Navette n°E - Samedi à 9h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Volley H</h2><p>Navette n°E - Samedi à 9h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Volley H</h2><p>Navette n°E - Samedi à 9h15<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Basket H</h2><p>Navette n°E - Samedi à 9h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ETSII Madrid"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ETSII Madrid - Basket H</h2><p>Navette n°E - Samedi à 9h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Basket H</h2><p>Navette n°E - Samedi à 9h15<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Basket H</h2><p>Navette n°E - Samedi à 9h30<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="EPFL"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">EPFL - Basket H</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Mines d’Alès"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines d’Alès - Basket H</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="ENSEA"  data-sport="Basket H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSEA - Basket H</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - UFR STAPS</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ENSIIE"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSIIE - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ENSEA"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENSEA - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Mines d’Alès"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines d’Alès - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Mines de Paris"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Paris - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="SupAéro"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">SupAéro - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Supoptique"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Escalade" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Escalade</h2><p>Navette n°E - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Volley H</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Volley H</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="ESTP"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Rugby H</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Rugby H</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Rugby H</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers Ecully</p></li>
+			<li data-ecole="Supoptique"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Hand H</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Golf</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers Golf de Mionnay</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Golf</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers Golf de Mionnay</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Golf</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers Golf de Mionnay</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Waterpolo</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Waterpolo</h2><p>Navette n°3 - Samedi à 9h45<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Volley H</h2><p>Navette n°4 - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="VP Tournoi"  data-sport="Volley H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">VP Tournoi - Volley H</h2><p>Navette n°4 - Samedi à 9h45<br/>Vers Doua - INSA</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Rugby H</h2><p>Navette n°4 - Samedi à 9h45<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Rugby H</h2><p>Navette n°4 - Samedi à 9h45<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="Vieux cons"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Vieux cons - Rugby H</h2><p>Navette n°4 - Samedi à 9h45<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="ESTP"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Golf</h2><p>Navette n°4 - Samedi à 9h45<br/>Vers Golf de Mionnay</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Golf</h2><p>Navette n°4 - Samedi à 9h45<br/>Vers Golf de Mionnay</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Golf</h2><p>Navette n°4 - Samedi à 9h45<br/>Vers Golf de Mionnay</p></li>
+			<li data-ecole="Supoptique"  data-sport="Golf" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Golf</h2><p>Navette n°4 - Samedi à 10h30<br/>Vers Golf de Mionnay</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Waterpolo</h2><p>Navette n°4 - Samedi à 10h30<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Rugby H</h2><p>Navette n°5 - Samedi à 11h00<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="ESTP"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Rugby H</h2><p>Navette n°5 - Samedi à 11h00<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Rugby H</h2><p>Navette n°5 - Samedi à 11h30<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="VP Tournoi"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">VP Tournoi - Rugby H</h2><p>Navette n°5 - Samedi à 11h30<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="Vieux cons"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Vieux cons - Rugby H</h2><p>Navette n°5 - Samedi à 11h30<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="Supoptique"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Supoptique - Hand H</h2><p>Navette n°5 - Samedi à 11h30<br/>Vers Centrale</p></li>
+			<li data-ecole="ESTP"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Hand H</h2><p>Navette n°5 - Samedi à 11h30<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Hand H</h2><p>Navette n°5 - Samedi à 11h30<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Hand H</h2><p>Navette n°5 - Samedi à 11h30<br/>Vers Centrale</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Hand H</h2><p>Navette n°5 - Samedi à 11h30<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Waterpolo</h2><p>Navette n°5 - Samedi à 11h30<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Foot H</h2><p>Navette n°6 - Samedi à 12h00<br/>Vers Stade Gilbert Vignes</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Rugby H</h2><p>Navette n°6 - Samedi à 12h00<br/>Vers Véto - Stade de Rugby</p></li>
+			<li data-ecole="EPFL"  data-sport="Ultimate" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">EPFL - Ultimate</h2><p>Navette n°6 - Samedi à 12h00<br/>Vers Gymnase Le Pérollier</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Ultimate" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Ultimate</h2><p>Navette n°6 - Samedi à 12h30<br/>Vers Gymnase Le Pérollier</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Ultimate" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Ultimate</h2><p>Navette n°6 - Samedi à 12h30<br/>Vers Gymnase Le Pérollier</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Ultimate" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Ultimate</h2><p>Navette n°6 - Samedi à 13h00<br/>Vers Gymnase Le Pérollier</p></li>
+			<li data-ecole="ESTP"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ESTP - Hand H</h2><p>Navette n°6 - Samedi à 13h00<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Lille"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Lille - Hand H</h2><p>Navette n°6 - Samedi à 13h00<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Marseille"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Marseille - Hand H</h2><p>Navette n°6 - Samedi à 13h00<br/>Vers Centrale</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Hand H</h2><p>Navette n°6 - Samedi à 13h00<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Paris"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Paris - Waterpolo</h2><p>Navette n°6 - Samedi à 13h00<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Waterpolo</h2><p>Navette n°6 - Samedi à 13h00<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Ponts et Chaussées"  data-sport="Foot H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Ponts et Chaussées - Foot H</h2><p>Navette n°7 - Samedi à 13h00<br/>Vers Stade Gilbert Vignes</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Rugby H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Rugby H</h2><p>Navette n°7 - Samedi à 13h00<br/>Vers Ecully</p></li>
+			<li data-ecole="VP Tournoi"  data-sport="Ultimate" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">VP Tournoi - Ultimate</h2><p>Navette n°7 - Samedi à 13h00<br/>Vers Gymnase Le Pérollier</p></li>
+			<li data-ecole="Agro Paris Tech"  data-sport="Ultimate" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Agro Paris Tech - Ultimate</h2><p>Navette n°7 - Samedi à 17h00<br/>Vers Gymnase Le Pérollier</p></li>
+			<li data-ecole="Mines de Saint-Étienne"  data-sport="Ultimate" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Saint-Étienne - Ultimate</h2><p>Navette n°7 - Samedi à 17h00<br/>Vers Gymnase Le Pérollier</p></li>
+			<li data-ecole="Télécom Bretagne"  data-sport="Ultimate" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Télécom Bretagne - Ultimate</h2><p>Navette n°7 - Samedi à 17h00<br/>Vers Gymnase Le Pérollier</p></li>
+			<li data-ecole="Mines de Nancy"  data-sport="Hand H" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Mines de Nancy - Hand H</h2><p>Navette n°7 - Samedi à 17h00<br/>Vers Centrale</p></li>
+			<li data-ecole="Centrale Nantes"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Centrale Nantes - Waterpolo</h2><p>Navette n°7 - Samedi à 17h00<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="Club photo"  data-sport="Waterpolo" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">Club photo - Waterpolo</h2><p>Navette n°7 - Samedi à 17h00<br/>Vers ENTPE - Piscine</p></li>
+			<li data-ecole="ENS Ulm"  data-sport="Volley F" style="white-space: normal; font-size: 13px" class="ui-li-static"><h2 style="font-size: 13px">ENS Ulm - Volley F</h2><p>Navette n°8 - Samedi à 17h00<br/>Vers Doua - INSA</p></li>
+		</ul>
+	
+	</div>
+	
+	<script src="scripts/navette.js"></script>
+</div>	
+
+	
