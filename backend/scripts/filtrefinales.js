@@ -1,7 +1,6 @@
 //
 //  filtrefinales.js
 //
-//  Created by Roland Lamideu
 //  
 //
 $('select').on('change', function () {

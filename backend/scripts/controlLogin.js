@@ -8,21 +8,22 @@ function isLoggedIn()
 {
 	if (document.cookie.length > 0)
 	{
-		var inizio = document.cookie.indexOf("pss=");
-		if (inizio != -1)
+		var start = document.cookie.indexOf("pss=");
+		//Check if the user got some valid cookies
+		if (start != -1)
 		{
-			inizio = inizio + 4;
-			var fine = document.cookie.indexOf(";",inizio);
-			if (fine == -1) fine = document.cookie.length;
-			username=unescape(document.cookie.substring(inizio,fine));
+			start = start + 4;
+			var end = document.cookie.indexOf(";",inizio);
+			if (end == -1) fine = document.cookie.length;
+			username=unescape(document.cookie.substring(start,end));
 			
-			inizio = document.cookie.indexOf("usn=");
-			if (inizio != -1)
+			start = document.cookie.indexOf("usn=");
+			if (start != -1)
 			{
-			  inizio = inizio + 4;
-			  var fine = document.cookie.indexOf(";",inizio);
-			  if (fine == -1) fine = document.cookie.length;
-			  password=unescape(document.cookie.substring(inizio,fine));
+			  start = inizio + 4;
+			  var end = document.cookie.indexOf(";",start);
+			  if (end == -1) end = document.cookie.length;
+			  password=unescape(document.cookie.substring(start,end));
 			  return Login(username,password);
 			}
 			else
@@ -36,6 +37,7 @@ function isLoggedIn()
 			
 function Login(username,password)
 {
+//ask to php page if the login it's ok or not
 	var ret=false;
 	$.ajax({
 		async :false,
@@ -63,6 +65,7 @@ function Login(username,password)
 
 function Logout()
 {
+//delete cookies because if it's logged we write cookies to let the user log in
 	document.cookie = 'pss=' + escape('') + '; expires=-1; path=/';
 	document.cookie = 'usn=' + escape('') + '; expires=-1; path=/';
 	document.location.href="login.html";

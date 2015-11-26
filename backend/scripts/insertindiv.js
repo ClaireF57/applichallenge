@@ -1,16 +1,22 @@
+//
+//  insertfinales.js
+//
+//  Created by Francesco Zanoli 
+//  
+//
 $(function() {
 	if (!isLoggedIn()) document.location="login.html";
 	ResIndiv();
 	$(document).on('click', '.resultatIndiv', function(){ 
 
-		ecole1 = 'value="'+$(this).attr("data-ecole1")+'"';
-		ecole2 = 'value="'+$(this).attr("data-ecole2")+'"';
-		ecole3 = 'value="'+$(this).attr("data-ecole3")+'"';
+		school1 = 'value="'+$(this).attr("data-ecole1")+'"';
+		school2 = 'value="'+$(this).attr("data-ecole2")+'"';
+		school3 = 'value="'+$(this).attr("data-ecole3")+'"';
 		sport = 'value="'+$(this).attr("data-sport")+'"';
 		id=$(this).attr("data-id");
 		
 		header='<div data-role="header" style="text-align:center"><a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><div>'+$(this).attr("data-sport")+'</div></div>';
-		body='<div role="main" class="ui-content"><p>Ce formulaire permet d\'entrer les 3 premiers vainqueurs des sports individuels.<br/> Les résultats s\'affichent dans matchs > sport individuels.<br/> Entrer l\'ecole et si possible le nom du gagnant, son score ou temps mis.<br/> Ex: Ecole Centrale Lyon - Francois Paugam (8:00) </p><fieldset><div><label for="text-13">Medaille d\'or:</label><input type="text" '+ecole1+' id="ecole1Edit"/></div><div><label>Medaille d\'argent:</label><input type="text" '+ecole2+' id="ecole2Edit"/></div><div><label> Medaille de bronzee:</label><input type="text" '+ecole3+' id="ecole3Edit"/></div></fieldset><filedset><button type="submit" onclick="javascript:SaveRes('+id+');" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check save">Enregistrer</button></filedset></div>';
+		body='<div role="main" class="ui-content"><p>Ce formulaire permet d\'entrer les 3 premiers vainqueurs des sports individuels.<br/> Les résultats s\'affichent dans matchs > sport individuels.<br/> Entrer l\'ecole et si possible le nom du gagnant, son score ou temps mis.<br/> Ex: Ecole Centrale Lyon - Francois Paugam (8:00) </p><fieldset><div><label for="text-13">Medaille d\'or:</label><input type="text" '+school1+' id="ecole1Edit"/></div><div><label>Medaille d\'argent:</label><input type="text" '+school2+' id="ecole2Edit"/></div><div><label> Medaille de bronzee:</label><input type="text" '+school3+' id="ecole3Edit"/></div></fieldset><filedset><button type="submit" onclick="javascript:SaveRes('+id+');" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check save">Enregistrer</button></filedset></div>';
 		
 		$('<div>').attr({'data-role':'popup','id':'popupBasic','data-dismissible':'false','style':'min-width:600px;','data-transition':'pop'}).appendTo('[data-role="content"]');
 		$('<div>').attr({'data-role':'header','data-theme':'b','id':'popup-header'}).append(header).appendTo('#popupBasic');

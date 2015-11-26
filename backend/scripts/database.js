@@ -4,7 +4,7 @@
 //  Created by Francesco Zanoli 
 //  
 //
-//Prende le file que contien les data
+//General function of SELECT,UPDATE,DELETE We call their from all the function above
 function Get(context)
 	{
 		data=null;
@@ -20,6 +20,7 @@ function Get(context)
 			return new Array();
 		return data;
 		}
+//Update, save the file .json on the server
 function Save(context,data)
 {
 	link='../save.php?contet='+context+"&auth=FRANCElovePE25oupedelamour";
@@ -35,17 +36,8 @@ function Save(context,data)
         	alert(JSON.stringify(data));}
 		});
 }
-function GetNewID(data)
-{
-	if (data==null)
-		return 0;
-	max=-1;
-	for(i=0;i<JSon.length;i++)
-		if (JSon[i].ID>=max)
-			max=JSon[i].ID;
-	return max+1;
-	}
 
+//delete
 function Remove(data,id)
 {
 	if (data==null)
@@ -57,6 +49,18 @@ function Remove(data,id)
 			break;
 		}
 	}
+//we find the same function of dataseul but they do different things
+function GetNewID(data)
+{
+	if (data==null)
+		return 0;
+	max=-1;
+	for(i=0;i<JSon.length;i++)
+		if (JSon[i].ID>=max)
+			max=JSon[i].ID;
+	return max+1;
+	}
+
 //SELECT
 function SelectNews()
 {
@@ -167,8 +171,25 @@ function SelectDernier()
 	return matchs;
 	}
 
+function SelectSportIndividuel()
+{
+	sportInd= Get("indiv");
+    return sportInd;
+}
+
+function SelctPouleResultat()
+{
+	sportInd= Get("poule");
+    return sportInd;
+}
+
+function SelectResultatFinal()
+{
+	sportInd= Get("final");
+    return sportInd;
+}
 	
-//INSERT
+//INSERT Every time we make a GET, then we edit the data and we make a Save
 function InsertNews(title,subtitle,debut,fin)
 {
 	JSon=Get("news");
@@ -334,6 +355,7 @@ function EditSport(ID,title)
 	Save("sport",JSon);
 	}
 
+//UPDATE
 function EditMatch(ID,equipe1,equipe2,ecole1,ecole2,heure,lieu,sport)
 {
 	JSon=Get("match");
@@ -395,20 +417,3 @@ function EditLieu(ID,title)
 	Save("news",JSon);
 }
 
-function SelectSportIndividuel()
-{
-	sportInd= Get("indiv");
-    return sportInd;
-}
-
-function SelctPouleResultat()
-{
-	sportInd= Get("poule");
-    return sportInd;
-}
-
-function SelectResultatFinal()
-{
-	sportInd= Get("final");
-    return sportInd;
-}

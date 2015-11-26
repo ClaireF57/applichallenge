@@ -2,10 +2,11 @@
 //  database_seul_lecture.js
 //
 //  Created by Francesco Zanoli 
-//  
+// 
 //
 
-//Prende le file que contien les data
+//take the data from the file context+".json"
+//Every function that needs data call this function 
 function Get(context)
 	{
 		data=null;
@@ -22,7 +23,7 @@ function Get(context)
 			return new Array();
 		return data;
 		}
-
+//Find which is the first ID dispo
 function GetNewID(data)
 {
 	if (data==null)
@@ -35,7 +36,7 @@ function GetNewID(data)
 	}
 
 
-//SELECT
+//SELECT, we don't have UPDATE AND DELETE because we are in frontend
 function SelectNews()
 {
 	news= Get("news");
@@ -103,6 +104,7 @@ function SelectParSport(ID)
 	nomsport="";
 	data=SelectScores();
 	sports=SelectSports();
+	//Create the object because we don't use a entity framework so this js need to fill the obj from the Json
 	for (i=0;i<sports.length;i++)
 		if (sports[i].ID==ID)
 		{	
