@@ -1,3 +1,10 @@
+//
+//  md5.js
+//
+//  Created by Francesco Zanoli 
+//  
+//
+
 (function () {
 	md5 = function (string) {
 

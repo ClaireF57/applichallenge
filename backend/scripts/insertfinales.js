@@ -1,3 +1,9 @@
+//
+//  insertfinales.js
+//
+//  Created by Francesco Zanoli 
+//  
+//
 $(function() {
 	if (!isLoggedIn()) document.location="login.html";
 	MacthList();

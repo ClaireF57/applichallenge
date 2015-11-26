@@ -15,7 +15,7 @@ Les fichiers du backend sont placés dans le dossier backend et contiennent les 
 ##Créateurs
 
 Ce projet à été réalisé par le PE 25 de l'école Centrale de Lyon :  
-Francesco Zanoli  
+[Francesco Zanoli](https://github.com/FrancescoZ)  
 [Roland Lamideu](https://github.com/thalkz)  
 Mathilde Reynaud  
 Claire Fromholz  

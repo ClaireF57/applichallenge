@@ -1,3 +1,9 @@
+//
+//  database.js
+//
+//  Created by Francesco Zanoli 
+//  
+//
 //Prende le file que contien les data
 function Get(context)
 	{

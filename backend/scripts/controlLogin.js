@@ -1,3 +1,9 @@
+//
+//  controlLogin.js
+//
+//  Created by Francesco Zanoli 
+//  
+//
 function isLoggedIn()
 {
 	if (document.cookie.length > 0)
